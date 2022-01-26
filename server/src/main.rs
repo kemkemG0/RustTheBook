@@ -17,4 +17,21 @@ impl Server{
     }
 }
 
+struct Request{
+    path:String,
+    query_string:String,
+    method:Method
+}
+enum Method{
+    GET,
+    POST,
+    DELETE,
+    PUT
+}
+
+/*
+GET /user?id=10 HTTP/1.1\r\n
+HEADERS\r\n
+BODY
+*/
 
